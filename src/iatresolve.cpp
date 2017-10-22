@@ -1,11 +1,5 @@
 #include "iatresolve.h"
 
-struct IMP_AT
-{
-	DWORD Size;
-	PVOID Address;
-};
-
 IMP_AT GetIAT(LPCSTR ModuleName)
 {
 	HMODULE mod = GetModuleHandleA(ModuleName);
