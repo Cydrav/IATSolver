@@ -1,4 +1,6 @@
 // by jasonfish4
+#ifndef IATRESOLVE
+#define IATRESOLVE
 #include <windows.h>
 
 struct IMP_AT
@@ -13,3 +15,4 @@ DWORD CalculateVirtualPageCount(IMP_AT IAT);
 
 void ResolveIAT(LPCSTR FirstModule, LPCSTR CopyModule);
 
+#endif
