@@ -31,6 +31,7 @@ pop ebp
 retn
 ```
 This jump or "hook" jumps Process2.function_one which is an identical function; however, the injection of Process2 loads its own Import Address Table and doesn't resolve correctly, making calls direct to invalid or unmapped memory locations. This set of functions fixes that problem.
+
 **struct IMP_AT** - 
 Contains the size of the Import Address table and the base address of it
 
