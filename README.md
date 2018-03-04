@@ -1,4 +1,4 @@
-# IATResolution
+# IATSolver
 Resolves the correct Import Address Table for copy modules
 
 For specific reasons, reverse engineers and others may want to load an identical library/module into a process.
